@@ -1,0 +1,1493 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1794,7967" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="86">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>DocumentFormat.OpenXml</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>UiPath.Excel.Activities.Business.Filter</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>DocumentFormat.OpenXml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
+      <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Sequence sap2010:Annotation.AnnotationText="Esta secuencia cumple con las funciones de realizar una extraccion de datos, modificacion e incersion ordenada de los mismos del documento de excel previamente extraido de el sistema gestor de PSDS &quot;ASCM CTP Global PSDS&quot;.&#xD;&#xA;&#xD;&#xA;A continuacion se describira los datos extraidos de el documento anteriormente mencionado y en las variable en la cual se alojan dichos datos:&#xD;&#xA;&#xD;&#xA;1.- Numero de parte de las piezas (Variable: dtNoParte, Tipo: DataTable)&#xD;&#xA;El numero de parte es utilizado como un identificador de la cual vienen asociado los datos que se extraen a continuacion.&#xD;&#xA;&#xD;&#xA;2.- Cantidad de piezas por paquete o caja (Variable: dtQtyPPack, Tipo: DataTable)&#xD;&#xA;Define la catidad de piezas que contiene cada paquete o caja, junto con el dato de Cantidad de piezas por Pallet, son utilizado al final para realizar un calculo de cuantas cajas contiene el pallet en el cual se estan guardando.&#xD;&#xA;&#xD;&#xA;3.-  Cantidad de piezas por Pallet (Variable: dtQtyLU, Tipo: DataTable)&#xD;&#xA;Define la catidad de piezas que contiene  el pallet en el que vienen almacenadas, junto con el dato de cantidad de piezas por paquete o caja, son utilizado al final para realizar un calculo de cuantas cajas contiene el pallet en el cual se estan guardando.&#xD;&#xA;&#xD;&#xA;4.- Largo de los paquetes o cajas (Variable: dtPPack_L, Tipo: Datatable)&#xD;&#xA;Define la medida en el Largo de los paquetes o cajas.&#xD;&#xA;&#xD;&#xA;5.- Ancho de los paquetes o cajas (Variable: dtPPack_W, Tipo: Datatable)&#xD;&#xA;Define la medida en el Ancho de los paquetes o cajas.&#xD;&#xA;&#xD;&#xA;6.- Altura de los paquetes o cajas (Variable: dtPPack_L, Tipo: Datatable)&#xD;&#xA;Define la medida de la Altura de los paquetes o cajas.&#xD;&#xA;&#xD;&#xA;7.- Largo del Pallet (Variable: dtLU_L, Tipo: Datatable)&#xD;&#xA;Define la medida en el Largo del pallet.&#xD;&#xA;&#xD;&#xA;8.- Ancho del Pallet (Variable: dtLU_W, Tipo: Datatable)&#xD;&#xA;Define la medida en el Ancho del pallet.&#xD;&#xA;&#xD;&#xA;9.- Altura del Pallet (Variable: dtLU_H, Tipo: Datatable)&#xD;&#xA;Define la medida en la Altura del pallet." DisplayName="Sequence Extraccion, Modificacion e Incersion de datos extraidos de MoP" sap:VirtualizedContainerService.HintSize="638,7902" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="dtNoPartes" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dtQtyPPack" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dtPPack_L" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dtPPack_W" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dtPPack_H" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dtLU_L" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dtLU_W" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dtLU_H" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dtQtyLU" />
+      <Variable x:TypeArguments="x:String" Name="hddtPPack_L" />
+      <Variable x:TypeArguments="x:String" Name="hddtPPack_W" />
+      <Variable x:TypeArguments="x:String" Name="hddtPPack_H" />
+      <Variable x:TypeArguments="x:String" Name="hddtLU_L" />
+      <Variable x:TypeArguments="x:String" Name="hddtLU_W" />
+      <Variable x:TypeArguments="x:String" Name="hddtLU_H" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dtPSDS" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="596,7243" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+      <ueab:ExcelProcessScopeX.Body>
+        <ActivityAction x:TypeArguments="ui:IExcelProcess">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="562,7157" sap2010:WorkflowViewState.IdRef="Sequence_12">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="str_dtPPack_W" />
+              <Variable x:TypeArguments="scg:List(sd:DataTable)" Name="ctdtData" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" sap2010:Annotation.AnnotationText="Aqui selecciono por defecto el documento PSDS_base, este documento esta localizado en la siguiente ruta: C:\Users\uif41718\Documents\UiPath\Sistema consultor de dimensiones\PSDS.&#xD;&#xA;Las propiedades de este modulo son las siguientes:&#xD;&#xA;-Este documento se guardara en cada cambio que reciba &#xD;&#xA;-El docuemto se cerrara despues de finalizar el procedimiento que necesita de el.&#xD;&#xA;&#xD;&#xA;**EN CASO DE EJECUTAR ESTE PROYECTO EN UN EQUIPO DISTINTO, PRESTAR ATENCION A ESTA RUTA DEL DOCUMENTO Y MODIFICARLO SEGUN SEA EL CASO**" CreateNewFile="False" DisplayName="Usar PSDS_base para extraer datos" sap:VirtualizedContainerService.HintSize="520,3558" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" ResizeWindow="None" WorkbookPath="PSDS\PSDS_base.xls">
+              <ueab:ExcelApplicationCard.Body>
+                <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="486,3145" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="sd:DataTable" Name="dtPPack_Dimentions" />
+                      <Variable x:TypeArguments="sd:DataTable" Name="dtLU_Dimentions" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ueab:ReadRangeX sap2010:Annotation.AnnotationText="Es modulo hace lectura de la columna que contiene los NUMEROS DE PARTES en el documento de PSDS_base." DisplayName="Read Range Excel PSDS_base" sap:VirtualizedContainerService.HintSize="444,209" sap2010:WorkflowViewState.IdRef="ReadRangeX_2" Range="[Excel.Sheet(&quot;PSDS_base&quot;).Range(&quot;K:K&quot;)]" SaveTo="[dtNoPartes]">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ueab:ReadRangeX>
+                    <ueab:ReadRangeX sap2010:Annotation.AnnotationText="Es modulo hace lectura de la columna que contiene la CANTIDAD DE PIEZAS POR CAJA en el documento de PSDS_base." DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="444,209" sap2010:WorkflowViewState.IdRef="ReadRangeX_3" Range="[Excel.Sheet(&quot;PSDS_base&quot;).Range(&quot;Q:Q&quot;)]" SaveTo="[dtQtyPPack]">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ueab:ReadRangeX>
+                    <ueab:ReadRangeX sap2010:Annotation.AnnotationText="Es modulo hace lectura de la columna que contiene la CANTIDAD DE PIEZAS POR PALLET en el documento de PSDS_base." DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="444,209" sap2010:WorkflowViewState.IdRef="ReadRangeX_10" Range="[Excel.Sheet(&quot;PSDS_base&quot;).Range(&quot;V:V&quot;)]" SaveTo="[dtQtyLU]">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ueab:ReadRangeX>
+                    <ueab:ReadRangeX sap2010:Annotation.AnnotationText="Es modulo hace lectura de la columna que contiene el LARGO DE LAS CAJAS en el documento de PSDS_base." DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="444,209" sap2010:WorkflowViewState.IdRef="ReadRangeX_4" Range="[Excel.Sheet(&quot;PSDS_base&quot;).Range(&quot;S:S&quot;)]" SaveTo="[dtPPack_L]">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ueab:ReadRangeX>
+                    <Assign sap2010:Annotation.AnnotationText="En este modulo se extrae la cabezera de la tabla dtPPack_L." sap:VirtualizedContainerService.HintSize="444,102" sap2010:WorkflowViewState.IdRef="Assign_21">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[hddtPPack_L]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[dtPPack_L.Columns(0).ToString]</InArgument>
+                      </Assign.Value>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </Assign>
+                    <ueab:ReadRangeX sap2010:Annotation.AnnotationText="Es modulo hace lectura de la columna que contiene el ANCHO DE LAS CAJAS en el documento de PSDS_base." DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="444,209" sap2010:WorkflowViewState.IdRef="ReadRangeX_5" Range="[Excel.Sheet(&quot;PSDS_base&quot;).Range(&quot;T:T&quot;)]" SaveTo="[dtPPack_W]">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ueab:ReadRangeX>
+                    <Assign sap2010:Annotation.AnnotationText="En este modulo se extrae la cabezera de la tabla dtPPack_W." sap:VirtualizedContainerService.HintSize="444,102" sap2010:WorkflowViewState.IdRef="Assign_22">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[hddtPPack_W]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[dtPPack_W.Columns(0).ToString]</InArgument>
+                      </Assign.Value>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </Assign>
+                    <ueab:ReadRangeX sap2010:Annotation.AnnotationText="Es modulo hace lectura de la columna que contiene el ALTO DE LAS CAJAS en el documento de PSDS_base." DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="444,209" sap2010:WorkflowViewState.IdRef="ReadRangeX_6" Range="[Excel.Sheet(&quot;PSDS_base&quot;).Range(&quot;U:U&quot;)]" SaveTo="[dtPPack_H]">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ueab:ReadRangeX>
+                    <Assign sap2010:Annotation.AnnotationText="En este modulo se extrae la cabezera de la tabla dtPPack_H." sap:VirtualizedContainerService.HintSize="444,102" sap2010:WorkflowViewState.IdRef="Assign_23">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[hddtPPack_H]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[dtPPack_H.Columns(0).ToString]</InArgument>
+                      </Assign.Value>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </Assign>
+                    <ueab:ReadRangeX sap2010:Annotation.AnnotationText="Es modulo hace lectura de la columna que contiene el LARGO DE LOS PALLETS en el documento de PSDS_base." DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="444,209" sap2010:WorkflowViewState.IdRef="ReadRangeX_7" Range="[Excel.Sheet(&quot;PSDS_base&quot;).Range(&quot;W:W&quot;)]" SaveTo="[dtLU_L]">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ueab:ReadRangeX>
+                    <Assign sap2010:Annotation.AnnotationText="En este modulo se extrae la cabezera de la tabla LU_L." sap:VirtualizedContainerService.HintSize="444,102" sap2010:WorkflowViewState.IdRef="Assign_24">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[hddtLU_L]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[dtLU_L.Columns(0).ToString]</InArgument>
+                      </Assign.Value>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </Assign>
+                    <ueab:ReadRangeX sap2010:Annotation.AnnotationText="Es modulo hace lectura de la columna que contiene el ANCHO DE LOS PALLETS en el documento de PSDS_base." DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="444,209" sap2010:WorkflowViewState.IdRef="ReadRangeX_8" Range="[Excel.Sheet(&quot;PSDS_base&quot;).Range(&quot;X:X&quot;)]" SaveTo="[dtLU_W]">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ueab:ReadRangeX>
+                    <Assign sap2010:Annotation.AnnotationText="En este modulo se extrae la cabezera de la tabla LU_W." sap:VirtualizedContainerService.HintSize="444,102" sap2010:WorkflowViewState.IdRef="Assign_25">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[hddtLU_W]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[dtLU_W.Columns(0).ToString]</InArgument>
+                      </Assign.Value>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </Assign>
+                    <ueab:ReadRangeX sap2010:Annotation.AnnotationText="Es modulo hace lectura de la columna que contiene el ALTO DE LOS PALLETS en el documento de PSDS_base." DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="444,209" sap2010:WorkflowViewState.IdRef="ReadRangeX_9" Range="[Excel.Sheet(&quot;PSDS_base&quot;).Range(&quot;Y:Y&quot;)]" SaveTo="[dtLU_H]">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ueab:ReadRangeX>
+                    <Assign sap2010:Annotation.AnnotationText="En este modulo se extrae la cabezera de la tabla LU_H." sap:VirtualizedContainerService.HintSize="444,102" sap2010:WorkflowViewState.IdRef="Assign_26">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[hddtLU_H]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[dtLU_H.Columns(0).ToString]</InArgument>
+                      </Assign.Value>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </Assign>
+                  </Sequence>
+                </ActivityAction>
+              </ueab:ExcelApplicationCard.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ueab:ExcelApplicationCard>
+            <Parallel sap2010:Annotation.AnnotationText="En este modulo de funcion paralela se realizan los siguientes procedimientos:&#xD;&#xA;&#xD;&#xA;1.- La conversion de las dimensiones de las cajas y de los pallets de Pulgadas a Milimetros.&#xD;&#xA;2.- La eliminacion del prefijo &quot;In&quot; y &quot;mm&quot; en los datos de las dimensiones de las tablas.&#xD;&#xA;3.- La adicion de ceros a los numeros de partes que empiecen con &quot;A&quot; y un numero o que empiecen con 3 digitos y ademas de que se encuentren incompletos.&#xD;&#xA;4.- La adicion de guiones en las posiciones 3, 8, 13 y 15 a los numeros de partes que empiecen con &quot;A&quot; y un numero o que empiecen con 3 digitos ." DisplayName="Parallel Conversión, Formato y Validacion." sap:VirtualizedContainerService.HintSize="520,408" sap2010:WorkflowViewState.IdRef="Parallel_1">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Este modulo se encarga decomprobar cada dato del DataTable en dtNoPartes y realiza las siguietes acciones:&#xA;&#xA;- Si la fila que esta analizando empieza por A# o con 3 digitos y tiene menos de 13 caracteres, entonces se le acompletara los caracteres faltantes con 0 ademas de  que se le agregaran Guiones (&quot;-&quot;) en espacios especificos." DataTable="[dtNoPartes]" DisplayName="For Each Row in dtNoPartes" sap:VirtualizedContainerService.HintSize="560,2352" sap2010:WorkflowViewState.IdRef="ForEachRow_11">
+                <ui:ForEachRow.Body>
+                  <ActivityAction x:TypeArguments="sd:DataRow">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="sd:DataRow" Name="Row" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="526,1804" sap2010:WorkflowViewState.IdRef="Sequence_47">
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="x:Boolean" Name="bool_rowPPack_L" />
+                        <Variable x:TypeArguments="x:Boolean" Name="bool_rowNoPartX" />
+                        <Variable x:TypeArguments="x:String" Name="str_NoPart" />
+                        <Variable x:TypeArguments="x:Boolean" Name="bool_rowNoPartY" />
+                      </Sequence.Variables>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:LogMessage sap2010:Annotation.AnnotationText="Este Log Message lo utilizo para ver el dato con el cual esta a punto de trabajar.&#xA;" DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="484,148" sap2010:WorkflowViewState.IdRef="LogMessage_37" Level="Info" Message="[&quot;Valor a evaluar = &quot; + Row(&quot;CAS_Eng_Pn&quot;).ToString]">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:LogMessage>
+                      <ui:IsMatch sap2010:Annotation.AnnotationText="Este modulo cumple con la funcion de validad si el valos que se esta evaluando empieza con A# (la letra A mas un numero cualquiera).&#xA;si esta condicion se cumple, entonces asignara el valor true a la variable bool_dtNoPartesX." BuilderPattern="^A\d" DisplayName="Is Match" sap:VirtualizedContainerService.HintSize="484,146" sap2010:WorkflowViewState.IdRef="IsMatch_13" Input="[Row(&quot;CAS_Eng_Pn&quot;).ToString]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ST&quot;,&quot;OperationName&quot;:&quot;Starts with&quot;,&quot;OperationValue&quot;:&quot;^&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null},{&quot;Index&quot;:1,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;A&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null},{&quot;Index&quot;:2,&quot;OperationID&quot;:&quot;DIG&quot;,&quot;OperationName&quot;:&quot;Digit&quot;,&quot;OperationValue&quot;:&quot;\\d&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="^A\d" RegexOption="IgnoreCase, Compiled" Result="[bool_rowNoPartX]">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:IsMatch>
+                      <ui:IsMatch sap2010:Annotation.AnnotationText="Este modulo cumple con la funcion de validad si el valos que se esta evaluando empieza con tres numeros cualquiera.&#xA;si esta condicion se cumple, entonces asignara el valor true a la variable bool_dtNoPartesY." BuilderPattern="^\d\d\d" DisplayName="Is Match" sap:VirtualizedContainerService.HintSize="484,146" sap2010:WorkflowViewState.IdRef="IsMatch_14" Input="[Row(&quot;CAS_Eng_Pn&quot;).ToString]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ST&quot;,&quot;OperationName&quot;:&quot;Starts with&quot;,&quot;OperationValue&quot;:&quot;^&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null},{&quot;Index&quot;:1,&quot;OperationID&quot;:&quot;DIG&quot;,&quot;OperationName&quot;:&quot;Digit&quot;,&quot;OperationValue&quot;:&quot;\\d&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null},{&quot;Index&quot;:2,&quot;OperationID&quot;:&quot;DIG&quot;,&quot;OperationName&quot;:&quot;Digit&quot;,&quot;OperationValue&quot;:&quot;\\d&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null},{&quot;Index&quot;:3,&quot;OperationID&quot;:&quot;DIG&quot;,&quot;OperationName&quot;:&quot;Digit&quot;,&quot;OperationValue&quot;:&quot;\\d&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="^\d\d\d" RegexOption="IgnoreCase, Compiled" Result="[bool_rowNoPartY]">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:IsMatch>
+                      <Assign sap2010:Annotation.AnnotationText="Este modulo asigno el valor de la fila en una variable tipo string para poder trabajar con ella mas adelante." sap:VirtualizedContainerService.HintSize="484,117" sap2010:WorkflowViewState.IdRef="Assign_46">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:String">[str_NoPart]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:String">[Row("CAS_Eng_Pn").ToString]</InArgument>
+                        </Assign.Value>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </Assign>
+                      <If sap2010:Annotation.AnnotationText="En esta condicion evaluo si alguna de las dos variables booleans es verdadera, ademas de que evaluo si la longitud del string es igual a 13 digitos." Condition="[(bool_rowNoPartX = True OR bool_rowNoPartY = True) AND str_NoPart.Length &lt; 17]" sap:VirtualizedContainerService.HintSize="484,995" sap2010:WorkflowViewState.IdRef="If_2">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <If.Then>
+                          <Sequence sap2010:Annotation.AnnotationText="en este secuenci agrego los 0 restantes en el string, y agrego guiones en lugares especificos, con el motivo de darle el formato solicitado." sap:VirtualizedContainerService.HintSize="304,766" sap2010:WorkflowViewState.IdRef="Sequence_45">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_47">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[str_NoPart]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">[str_NoPart.PadRight(13,"0"c)]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_48">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[str_NoPart]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">[str_NoPart.Insert(2,"-"c)]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_49">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[str_NoPart]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">[str_NoPart.Insert(7,"-"c)]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_50">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[str_NoPart]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">[str_NoPart.Insert(12,"-"c)]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_51">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[str_NoPart]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">[str_NoPart.Insert(14,"-"c)]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <Assign sap2010:Annotation.AnnotationText="En este modiulo asigno el valor del striing ya modificado a la fila en la cual se esta modificando." sap:VirtualizedContainerService.HintSize="262,117" sap2010:WorkflowViewState.IdRef="Assign_52">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:Object">[Row("CAS_Eng_Pn")]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:Object">[str_NoPart]</InArgument>
+                              </Assign.Value>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </Assign>
+                          </Sequence>
+                        </If.Then>
+                        <If.Else>
+                          <Sequence sap:VirtualizedContainerService.HintSize="200,83" sap2010:WorkflowViewState.IdRef="Sequence_46">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </Sequence>
+                        </If.Else>
+                      </If>
+                    </Sequence>
+                  </ActivityAction>
+                </ui:ForEachRow.Body>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:ForEachRow>
+              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Este modulo se encarga decomprobar cada dato del DataTable en dtPPack_L y realiza las siguietes acciones:&#xA;&#xA;- Si la fila que esta analizando esta en Inches(&quot;Pulgadas&quot;), este eliminara el prefijo &quot;in&quot; y lo convierte en Double, luego lo convierte a milimetros(operacion por 25.4) y lo vuelve a guardar en el dtPPack_L&#xA;&#xA;- Si la fila que esta analizando esta en milimetros, elmina el prefijo &quot;mm&quot; y lo vuelve a guardar en el dtPPack_L" DataTable="[dtPPack_L]" DisplayName="For Each Row in dtPPack_L" sap:VirtualizedContainerService.HintSize="527,2352" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                <ui:ForEachRow.Body>
+                  <ActivityAction x:TypeArguments="sd:DataRow">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="sd:DataRow" Name="Row" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="493,2090" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="x:Boolean" Name="bool_rowPPack_L" />
+                      </Sequence.Variables>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:LogMessage sap2010:Annotation.AnnotationText="Este Log Message lo utilizo para ver el dato con el cual esta a punto de trabajar.&#xA;" DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="451,148" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info" Message="[&quot;Valor a evaluar = &quot; + Row(hddtPPack_L).ToString]">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:LogMessage>
+                      <ui:IsMatch sap2010:Annotation.AnnotationText="Esta expresion la utilizo para validar si el dato tiene como prefjo &quot;In&quot; o &quot;mm&quot;:&#xA;&#xA;-Si el actual valor en &quot;Row(hddtPPack_L)&quot; contiene el prefijo &quot;In&quot;, asigna a la variable bool_rowPPack_L en &quot;True&quot;&#xA;&#xA;-Si el actual valor en &quot;Row(hddtPPack_L)&quot; contiene el prefijo &quot;mm&quot;, asigna a la variable bool_rowPPack_L en &quot;False&quot;" BuilderPattern=" in" DisplayName="Is Match" sap:VirtualizedContainerService.HintSize="451,221" sap2010:WorkflowViewState.IdRef="IsMatch_2" Input="[Row(hddtPPack_L).ToString]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot; in&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern=" in" RegexOption="IgnoreCase, Compiled" Result="[bool_rowPPack_L]">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:IsMatch>
+                      <ui:IfElseIf sap2010:Annotation.AnnotationText="En esta condicion entran los valores en &quot;Row(&quot;P-Pack L&quot;)&quot; que contienen como prefijo &quot;in&quot;" DisplayName="Else If" sap:VirtualizedContainerService.HintSize="451,1549" sap2010:WorkflowViewState.IdRef="IfElseIf_1">
+                        <ui:IfElseIf.ConditionBlocks>
+                          <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
+                            <ui:IfElseIfBlock BlockType="If" Condition="[bool_rowPPack_L = True]">
+                              <ui:IfElseIfBlock.Then>
+                                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="376,706" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                                  <Sequence.Variables>
+                                    <Variable x:TypeArguments="x:String" Name="strRowPPack_L" />
+                                    <Variable x:TypeArguments="x:Double" Name="doublePPack_L" />
+                                  </Sequence.Variables>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ui:Replace sap2010:Annotation.AnnotationText="En este modulo remplazo el prefijo &quot;in&quot; por &quot;&quot; y el resultado lo asigno en la variable &quot;strRowPPack_L&quot;" BuilderPattern="in" sap:VirtualizedContainerService.HintSize="334,101" sap2010:WorkflowViewState.IdRef="Replace_3" Input="[Row(hddtPPack_L).ToString]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;in&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="in" RegexOption="IgnoreCase, Compiled" Result="[strRowPPack_L]">
+                                    <ui:Replace.Replacement>
+                                      <InArgument x:TypeArguments="x:String">
+                                        <Literal x:TypeArguments="x:String" Value="" />
+                                      </InArgument>
+                                    </ui:Replace.Replacement>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </ui:Replace>
+                                  <Assign sap2010:Annotation.AnnotationText="Aqui convierto el valor de la variable &quot;strRowPPack_L&quot; a tipo Double y lo asigno a la variable &quot;doublePPack_L&quot;" sap:VirtualizedContainerService.HintSize="334,117" sap2010:WorkflowViewState.IdRef="Assign_3">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:Double">[doublePPack_L]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:Double">[Double.Parse(strRowPPack_L)]</InArgument>
+                                    </Assign.Value>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </Assign>
+                                  <Assign sap2010:Annotation.AnnotationText="Aqui multiplico el valor de &quot;doublePPack_L&quot; por 25.4, con el objetivo de hacer la conversion a milimetros y el resultado lo remplazo en la fila en el DataTable" sap:VirtualizedContainerService.HintSize="334,147" sap2010:WorkflowViewState.IdRef="Assign_4">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:Object">[Row(hddtPPack_L)]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:Object">[doublePPack_L * 25.4]</InArgument>
+                                    </Assign.Value>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </Assign>
+                                  <ui:LogMessage sap2010:Annotation.AnnotationText="Este Log Message lo utilizo para ver los valores que fueron recientemente convertidos." DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,129" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[Row(hddtPPack_L).ToString]">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </ui:LogMessage>
+                                </Sequence>
+                              </ui:IfElseIfBlock.Then>
+                            </ui:IfElseIfBlock>
+                            <ui:IfElseIfBlock BlockType="Else">
+                              <ui:IfElseIfBlock.Then>
+                                <Sequence sap2010:Annotation.AnnotationText="Esta condicion se ejecuta cuando el valor de &quot;bool_rowPPack_L&quot; es igual a &quot;False&quot;" DisplayName="Body" sap:VirtualizedContainerService.HintSize="376,576" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                                  <Sequence.Variables>
+                                    <Variable x:TypeArguments="x:String" Name="strPPack_L_mm" />
+                                  </Sequence.Variables>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ui:Replace sap2010:Annotation.AnnotationText="Aqui remplazo el prefijo &quot;mm&quot; de el actual valor en &quot;Row(hddtPPack_L)&quot; por &quot;&quot; y dicho valor lo guardo en la variable &quot;strPPack_L_mm&quot;" BuilderPattern="mm" sap:VirtualizedContainerService.HintSize="334,116" sap2010:WorkflowViewState.IdRef="Replace_4" Input="[Row(hddtPPack_L).ToString]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;mm&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="mm" RegexOption="IgnoreCase, Compiled" Result="[strPPack_L_mm]">
+                                    <ui:Replace.Replacement>
+                                      <InArgument x:TypeArguments="x:String">
+                                        <Literal x:TypeArguments="x:String" Value="" />
+                                      </InArgument>
+                                    </ui:Replace.Replacement>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </ui:Replace>
+                                  <Assign sap2010:Annotation.AnnotationText="En este modulo, remplazo el valor de  &quot;Row(&quot;P-Pack L&quot;)&quot; por el valor en la variable  &quot;strPPack_L_mm&quot;" sap:VirtualizedContainerService.HintSize="334,117" sap2010:WorkflowViewState.IdRef="Assign_5">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:Object">[Row(hddtPPack_L)]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:Object">[strPPack_L_mm]</InArgument>
+                                    </Assign.Value>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </Assign>
+                                  <ui:LogMessage sap2010:Annotation.AnnotationText="Este Log Message lo utilizo para ver el resultado del valor final" DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,129" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Info" Message="[Row(hddtPPack_L).ToString]">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </ui:LogMessage>
+                                </Sequence>
+                              </ui:IfElseIfBlock.Then>
+                            </ui:IfElseIfBlock>
+                          </sc:BindingList>
+                        </ui:IfElseIf.ConditionBlocks>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:IfElseIf>
+                    </Sequence>
+                  </ActivityAction>
+                </ui:ForEachRow.Body>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:ForEachRow>
+              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Este modulo se encarga decomprobar cada dato del DataTable en dtPPack_W y realiza las siguietes acciones:&#xA;&#xA;- Si la fila que esta analizando esta en Inches(&quot;Pulgadas&quot;), este eliminara el prefijo &quot;in&quot; y lo convierte en Double, luego lo convierte a milimetros(operacion por 25.4) y lo vuelve a guardar en el dtPPack_W&#xA;&#xA;- Si la fila que esta analizando esta en milimetros, elmina el prefijo &quot;mm&quot; y lo vuelve a guardar en el dtPPack_W" DataTable="[dtPPack_W]" DisplayName="For Each Row in dtPPack_W" sap:VirtualizedContainerService.HintSize="527,2352" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+                <ui:ForEachRow.Body>
+                  <ActivityAction x:TypeArguments="sd:DataRow">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="sd:DataRow" Name="Row" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="493,2090" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="x:Boolean" Name="bool_rowPPack_W" />
+                      </Sequence.Variables>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:LogMessage sap2010:Annotation.AnnotationText="Este Log Message lo utilizo para ver el dato con el cual esta a punto de trabajar.&#xA;" DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="451,148" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="Info" Message="[&quot;Valor a evaluar = &quot; + Row(hddtPPack_W).ToString]">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:LogMessage>
+                      <ui:IsMatch sap2010:Annotation.AnnotationText="Esta expresion la utilizo para validar si el dato tiene como prefjo &quot;In&quot; o &quot;mm&quot;:&#xA;&#xA;-Si el actual valor en &quot;Row(hddtPPack_L)&quot; contiene el prefijo &quot;In&quot;, asigna a la variable bool_rowPPack_W en &quot;True&quot;&#xA;&#xA;-Si el actual valor en &quot;Row(hddtPPack_L)&quot; contiene el prefijo &quot;mm&quot;, asigna a la variable bool_rowPPack_W en &quot;False&quot;" BuilderPattern=" in" DisplayName="Is Match" sap:VirtualizedContainerService.HintSize="451,221" sap2010:WorkflowViewState.IdRef="IsMatch_3" Input="[Row(hddtPPack_W).ToString]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot; in&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern=" in" RegexOption="IgnoreCase, Compiled" Result="[bool_rowPPack_W]">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:IsMatch>
+                      <ui:IfElseIf sap2010:Annotation.AnnotationText="En esta condicion entran los valores en &quot;RowhddtPPack_W)&quot; que contienen como prefijo &quot;in&quot;" DisplayName="Else If" sap:VirtualizedContainerService.HintSize="451,1549" sap2010:WorkflowViewState.IdRef="IfElseIf_2">
+                        <ui:IfElseIf.ConditionBlocks>
+                          <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
+                            <ui:IfElseIfBlock BlockType="If" Condition="[bool_rowPPack_W = True]">
+                              <ui:IfElseIfBlock.Then>
+                                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="376,706" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                                  <Sequence.Variables>
+                                    <Variable x:TypeArguments="x:String" Name="strRowPPack_W" />
+                                    <Variable x:TypeArguments="x:Double" Name="doublePPack_W" />
+                                  </Sequence.Variables>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ui:Replace sap2010:Annotation.AnnotationText="En este modulo remplazo el prefijo &quot;in&quot; por &quot;&quot; y el resultado lo asigno en la variable &quot;strRowPPack_W&quot;" BuilderPattern="in" sap:VirtualizedContainerService.HintSize="334,101" sap2010:WorkflowViewState.IdRef="Replace_5" Input="[Row(hddtPPack_W).ToString]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;in&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="in" RegexOption="IgnoreCase, Compiled" Result="[strRowPPack_W]">
+                                    <ui:Replace.Replacement>
+                                      <InArgument x:TypeArguments="x:String">
+                                        <Literal x:TypeArguments="x:String" Value="" />
+                                      </InArgument>
+                                    </ui:Replace.Replacement>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </ui:Replace>
+                                  <Assign sap2010:Annotation.AnnotationText="Aqui convierto el valor de la variable &quot;strRowPPack_W&quot; a tipo Double y lo asigno a la variable &quot;doublePPack_W&quot;" sap:VirtualizedContainerService.HintSize="334,117" sap2010:WorkflowViewState.IdRef="Assign_6">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:Double">[doublePPack_W]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:Double">[Double.Parse(strRowPPack_W)]</InArgument>
+                                    </Assign.Value>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </Assign>
+                                  <Assign sap2010:Annotation.AnnotationText="Aqui multiplico el valor de &quot;doublePPack_W&quot; por 25.4, con el objetivo de hacer la conversion a milimetros y el resultado lo remplazo en la fila en el DataTable" sap:VirtualizedContainerService.HintSize="334,147" sap2010:WorkflowViewState.IdRef="Assign_7">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:Object">[Row(hddtPPack_W)]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:Object">[doublePPack_W * 25.4]</InArgument>
+                                    </Assign.Value>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </Assign>
+                                  <ui:LogMessage sap2010:Annotation.AnnotationText="Este Log Message lo utilizo para ver los valores que fueron recientemente convertidos." DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,129" sap2010:WorkflowViewState.IdRef="LogMessage_11" Level="Info" Message="[Row(hddtPPack_W).ToString]">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </ui:LogMessage>
+                                </Sequence>
+                              </ui:IfElseIfBlock.Then>
+                            </ui:IfElseIfBlock>
+                            <ui:IfElseIfBlock BlockType="Else">
+                              <ui:IfElseIfBlock.Then>
+                                <Sequence sap2010:Annotation.AnnotationText="Esta condicion se ejecuta cuando el valor de &quot;bool_rowPPack_W&quot; es igual a &quot;False&quot;" DisplayName="Body" sap:VirtualizedContainerService.HintSize="376,576" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                                  <Sequence.Variables>
+                                    <Variable x:TypeArguments="x:String" Name="strPPack_W_mm" />
+                                  </Sequence.Variables>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ui:Replace sap2010:Annotation.AnnotationText="Aqui remplazo el prefijo &quot;mm&quot; de el actual valor en &quot;Row(hddtPPack_W)&quot; por &quot;&quot; y dicho valor lo guardo en la variable &quot;strPPack_W_mm&quot;" BuilderPattern="mm" sap:VirtualizedContainerService.HintSize="334,116" sap2010:WorkflowViewState.IdRef="Replace_6" Input="[Row(hddtPPack_W).ToString]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;mm&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="mm" RegexOption="IgnoreCase, Compiled" Result="[strPPack_W_mm]">
+                                    <ui:Replace.Replacement>
+                                      <InArgument x:TypeArguments="x:String">
+                                        <Literal x:TypeArguments="x:String" Value="" />
+                                      </InArgument>
+                                    </ui:Replace.Replacement>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </ui:Replace>
+                                  <Assign sap2010:Annotation.AnnotationText="En este modulo, remplazo el valor de  &quot;Row(&quot;P-Pack W&quot;)&quot; por el valor en la variable  &quot;strPPack_W_mm&quot;" sap:VirtualizedContainerService.HintSize="334,117" sap2010:WorkflowViewState.IdRef="Assign_8">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:Object">[Row(hddtPPack_W)]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:Object">[strPPack_W_mm]</InArgument>
+                                    </Assign.Value>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </Assign>
+                                  <ui:LogMessage sap2010:Annotation.AnnotationText="Este Log Message lo utilizo para ver el resultado del valor final" DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,129" sap2010:WorkflowViewState.IdRef="LogMessage_12" Level="Info" Message="[Row(hddtPPack_W).ToString]">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </ui:LogMessage>
+                                </Sequence>
+                              </ui:IfElseIfBlock.Then>
+                            </ui:IfElseIfBlock>
+                          </sc:BindingList>
+                        </ui:IfElseIf.ConditionBlocks>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:IfElseIf>
+                    </Sequence>
+                  </ActivityAction>
+                </ui:ForEachRow.Body>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:ForEachRow>
+              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Este modulo se encarga decomprobar cada dato del DataTable en dtPPack_H y realiza las siguietes acciones:&#xA;&#xA;- Si la fila que esta analizando esta en Inches(&quot;Pulgadas&quot;), este eliminara el prefijo &quot;in&quot; y lo convierte en Double, luego lo convierte a milimetros(operacion por 25.4) y lo vuelve a guardar en el dtPPack_H&#xA;&#xA;- Si la fila que esta analizando esta en milimetros, elmina el prefijo &quot;mm&quot; y lo vuelve a guardar en el dtPPack_H" DataTable="[dtPPack_H]" DisplayName="For Each Row in dtPPack_H" sap:VirtualizedContainerService.HintSize="527,2352" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
+                <ui:ForEachRow.Body>
+                  <ActivityAction x:TypeArguments="sd:DataRow">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="sd:DataRow" Name="Row" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="493,2090" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="x:Boolean" Name="bool_rowPPack_H" />
+                      </Sequence.Variables>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:LogMessage sap2010:Annotation.AnnotationText="Este Log Message lo utilizo para ver el dato con el cual esta a punto de trabajar.&#xA;" DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="451,148" sap2010:WorkflowViewState.IdRef="LogMessage_13" Level="Info" Message="[&quot;Valor a evaluar = &quot; + Row(hddtPPack_H).ToString]">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:LogMessage>
+                      <ui:IsMatch sap2010:Annotation.AnnotationText="Esta expresion la utilizo para validar si el dato tiene como prefjo &quot;In&quot; o &quot;mm&quot;:&#xA;&#xA;-Si el actual valor en &quot;Row(hddtPPack_H)&quot; contiene el prefijo &quot;In&quot;, asigna a la variable bool_rowPPack_H en &quot;True&quot;&#xA;&#xA;-Si el actual valor en &quot;Row(hddtPPack_H)&quot; contiene el prefijo &quot;mm&quot;, asigna a la variable bool_rowPPack_H en &quot;False&quot;" BuilderPattern=" in" DisplayName="Is Match" sap:VirtualizedContainerService.HintSize="451,221" sap2010:WorkflowViewState.IdRef="IsMatch_4" Input="[Row(hddtPPack_H).ToString]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot; in&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern=" in" RegexOption="IgnoreCase, Compiled" Result="[bool_rowPPack_H]">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:IsMatch>
+                      <ui:IfElseIf sap2010:Annotation.AnnotationText="En esta condicion entran los valores en &quot;Row(hddtPPack_H)&quot; que contienen como prefijo &quot;in&quot;" DisplayName="Else If" sap:VirtualizedContainerService.HintSize="451,1549" sap2010:WorkflowViewState.IdRef="IfElseIf_3">
+                        <ui:IfElseIf.ConditionBlocks>
+                          <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
+                            <ui:IfElseIfBlock BlockType="If" Condition="[bool_rowPPack_H = True]">
+                              <ui:IfElseIfBlock.Then>
+                                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="376,706" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                                  <Sequence.Variables>
+                                    <Variable x:TypeArguments="x:String" Name="strRowPPack_H" />
+                                    <Variable x:TypeArguments="x:Double" Name="doublePPack_H" />
+                                  </Sequence.Variables>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ui:Replace sap2010:Annotation.AnnotationText="En este modulo remplazo el prefijo &quot;in&quot; por &quot;&quot; y el resultado lo asigno en la variable &quot;strRowPPack_L&quot;" BuilderPattern="in" sap:VirtualizedContainerService.HintSize="334,101" sap2010:WorkflowViewState.IdRef="Replace_7" Input="[Row(hddtPPack_H).ToString]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;in&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="in" RegexOption="IgnoreCase, Compiled" Result="[strRowPPack_H]">
+                                    <ui:Replace.Replacement>
+                                      <InArgument x:TypeArguments="x:String">
+                                        <Literal x:TypeArguments="x:String" Value="" />
+                                      </InArgument>
+                                    </ui:Replace.Replacement>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </ui:Replace>
+                                  <Assign sap2010:Annotation.AnnotationText="Aqui convierto el valor de la variable &quot;strRowPPack_L&quot; a tipo Double y lo asigno a la variable &quot;doublePPack_L&quot;" sap:VirtualizedContainerService.HintSize="334,117" sap2010:WorkflowViewState.IdRef="Assign_9">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:Double">[doublePPack_H]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:Double">[Double.Parse(strRowPPack_H)]</InArgument>
+                                    </Assign.Value>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </Assign>
+                                  <Assign sap2010:Annotation.AnnotationText="Aqui multiplico el valor de &quot;doublePPack_L&quot; por 25.4, con el objetivo de hacer la conversion a milimetros y el resultado lo remplazo en la fila en el DataTable" sap:VirtualizedContainerService.HintSize="334,147" sap2010:WorkflowViewState.IdRef="Assign_10">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:Object">[Row(hddtPPack_H)]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:Object">[doublePPack_H * 25.4]</InArgument>
+                                    </Assign.Value>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </Assign>
+                                  <ui:LogMessage sap2010:Annotation.AnnotationText="Este Log Message lo utilizo para ver los valores que fueron recientemente convertidos." DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,129" sap2010:WorkflowViewState.IdRef="LogMessage_14" Level="Info" Message="[Row(hddtPPack_H).ToString]">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </ui:LogMessage>
+                                </Sequence>
+                              </ui:IfElseIfBlock.Then>
+                            </ui:IfElseIfBlock>
+                            <ui:IfElseIfBlock BlockType="Else">
+                              <ui:IfElseIfBlock.Then>
+                                <Sequence sap2010:Annotation.AnnotationText="Esta condicion se ejecuta cuando el valor de &quot;bool_rowPPack_L&quot; es igual a &quot;False&quot;" DisplayName="Body" sap:VirtualizedContainerService.HintSize="376,576" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                                  <Sequence.Variables>
+                                    <Variable x:TypeArguments="x:String" Name="strPPack_L_mm" />
+                                  </Sequence.Variables>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ui:Replace sap2010:Annotation.AnnotationText="Aqui remplazo el prefijo &quot;mm&quot; de el actual valor en &quot;Row(hddtPPack_H)&quot; por &quot;&quot; y dicho valor lo guardo en la variable &quot;strPPack_L_mm&quot;" BuilderPattern="mm" sap:VirtualizedContainerService.HintSize="334,116" sap2010:WorkflowViewState.IdRef="Replace_8" Input="[Row(hddtPPack_H).ToString]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;mm&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="mm" RegexOption="IgnoreCase, Compiled" Result="[strPPack_L_mm]">
+                                    <ui:Replace.Replacement>
+                                      <InArgument x:TypeArguments="x:String">
+                                        <Literal x:TypeArguments="x:String" Value="" />
+                                      </InArgument>
+                                    </ui:Replace.Replacement>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </ui:Replace>
+                                  <Assign sap2010:Annotation.AnnotationText="En este modulo, remplazo el valor de  &quot;Row(hddtPPack_H)&quot; por el valor en la variable  &quot;strPPack_L_mm&quot;" sap:VirtualizedContainerService.HintSize="334,117" sap2010:WorkflowViewState.IdRef="Assign_11">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:Object">[Row(hddtPPack_H)]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:Object">[strPPack_L_mm]</InArgument>
+                                    </Assign.Value>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </Assign>
+                                  <ui:LogMessage sap2010:Annotation.AnnotationText="Este Log Message lo utilizo para ver el resultado del valor final" DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,129" sap2010:WorkflowViewState.IdRef="LogMessage_15" Level="Info" Message="[Row(hddtPPack_H).ToString]">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </ui:LogMessage>
+                                </Sequence>
+                              </ui:IfElseIfBlock.Then>
+                            </ui:IfElseIfBlock>
+                          </sc:BindingList>
+                        </ui:IfElseIf.ConditionBlocks>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:IfElseIf>
+                    </Sequence>
+                  </ActivityAction>
+                </ui:ForEachRow.Body>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:ForEachRow>
+              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Este modulo se encarga decomprobar cada dato del DataTable en dtLU_L y realiza las siguietes acciones:&#xA;&#xA;- Si la fila que esta analizando esta en Inches(&quot;Pulgadas&quot;), este eliminara el prefijo &quot;in&quot; y lo convierte en Double, luego lo convierte a milimetros(operacion por 25.4) y lo vuelve a guardar en el dtLU_L&#xA;&#xA;- Si la fila que esta analizando esta en milimetros, elmina el prefijo &quot;mm&quot; y lo vuelve a guardar en el dtLU_L" DataTable="[dtLU_L]" DisplayName="For Each Row in dtLU_L" sap:VirtualizedContainerService.HintSize="527,2352" sap2010:WorkflowViewState.IdRef="ForEachRow_4">
+                <ui:ForEachRow.Body>
+                  <ActivityAction x:TypeArguments="sd:DataRow">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="sd:DataRow" Name="Row" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="493,2066" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="x:Boolean" Name="bool_rowLU_L" />
+                      </Sequence.Variables>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:LogMessage sap2010:Annotation.AnnotationText="Este Log Message lo utilizo para ver el dato con el cual esta a punto de trabajar.&#xA;" DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="451,148" sap2010:WorkflowViewState.IdRef="LogMessage_16" Level="Info" Message="[&quot;Valor a evaluar = &quot; + Row(hddtLU_L).ToString]">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:LogMessage>
+                      <ui:IsMatch sap2010:Annotation.AnnotationText="Esta expresion la utilizo para validar si el dato tiene como prefjo &quot;In&quot; o &quot;mm&quot;:&#xA;&#xA;-Si el actual valor en &quot;Row(hddtLU_L)&quot; contiene el prefijo &quot;In&quot;, asigna a la variable bool_rowLU_L en &quot;True&quot;&#xA;&#xA;-Si el actual valor en &quot;Row(hddtLU_L)&quot; contiene el prefijo &quot;mm&quot;, asigna a la variable bool_rowLU_L en &quot;False&quot;" BuilderPattern=" in" DisplayName="Is Match" sap:VirtualizedContainerService.HintSize="451,206" sap2010:WorkflowViewState.IdRef="IsMatch_5" Input="[Row(hddtLU_L).ToString]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot; in&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern=" in" RegexOption="IgnoreCase, Compiled" Result="[bool_rowLU_L]">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:IsMatch>
+                      <ui:IfElseIf sap2010:Annotation.AnnotationText="En esta condicion entran los valores en &quot;Row(hddtLU_L)&quot; que contienen como prefijo &quot;in&quot;" DisplayName="Else If" sap:VirtualizedContainerService.HintSize="451,1540" sap2010:WorkflowViewState.IdRef="IfElseIf_4">
+                        <ui:IfElseIf.ConditionBlocks>
+                          <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
+                            <ui:IfElseIfBlock BlockType="If" Condition="[bool_rowLU_L = True]">
+                              <ui:IfElseIfBlock.Then>
+                                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="376,697" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                                  <Sequence.Variables>
+                                    <Variable x:TypeArguments="x:String" Name="strRowLU_L" />
+                                    <Variable x:TypeArguments="x:Double" Name="doubleLU_L" />
+                                  </Sequence.Variables>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ui:Replace sap2010:Annotation.AnnotationText="En este modulo remplazo el prefijo &quot;in&quot; por &quot;&quot; y el resultado lo asigno en la variable &quot;strRowLU_L&quot;" BuilderPattern="in" sap:VirtualizedContainerService.HintSize="334,101" sap2010:WorkflowViewState.IdRef="Replace_9" Input="[Row(hddtLU_L).ToString]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;in&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="in" RegexOption="IgnoreCase, Compiled" Result="[strRowLU_L]">
+                                    <ui:Replace.Replacement>
+                                      <InArgument x:TypeArguments="x:String">
+                                        <Literal x:TypeArguments="x:String" Value="" />
+                                      </InArgument>
+                                    </ui:Replace.Replacement>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </ui:Replace>
+                                  <Assign sap2010:Annotation.AnnotationText="Aqui convierto el valor de la variable &quot;strRowLU_L&quot; a tipo Double y lo asigno a la variable &quot;doubleLU_L&quot;" sap:VirtualizedContainerService.HintSize="334,117" sap2010:WorkflowViewState.IdRef="Assign_12">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:Double">[doubleLU_L]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:Double">[Double.Parse(strRowLU_L)]</InArgument>
+                                    </Assign.Value>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </Assign>
+                                  <Assign sap2010:Annotation.AnnotationText="Aqui multiplico el valor de &quot;doubleLU_L&quot; por 25.4, con el objetivo de hacer la conversion a milimetros y el resultado lo remplazo en la fila en el DataTable" sap:VirtualizedContainerService.HintSize="334,136" sap2010:WorkflowViewState.IdRef="Assign_13">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:Object">[Row(hddtLU_L)]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:Object">[doubleLU_L * 25.4]</InArgument>
+                                    </Assign.Value>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </Assign>
+                                  <ui:LogMessage sap2010:Annotation.AnnotationText="Este Log Message lo utilizo para ver los valores que fueron recientemente convertidos." DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,131" sap2010:WorkflowViewState.IdRef="LogMessage_17" Level="Info" Message="[Row(hddtLU_L).ToString]">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </ui:LogMessage>
+                                </Sequence>
+                              </ui:IfElseIfBlock.Then>
+                            </ui:IfElseIfBlock>
+                            <ui:IfElseIfBlock BlockType="Else">
+                              <ui:IfElseIfBlock.Then>
+                                <Sequence sap2010:Annotation.AnnotationText="Esta condicion se ejecuta cuando el valor de &quot;bool_rowLU_L&quot; es igual a &quot;False&quot;" DisplayName="Body" sap:VirtualizedContainerService.HintSize="376,576" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                                  <Sequence.Variables>
+                                    <Variable x:TypeArguments="x:String" Name="strLU_L_mm" />
+                                  </Sequence.Variables>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ui:Replace sap2010:Annotation.AnnotationText="Aqui remplazo el prefijo &quot;mm&quot; de el actual valor en &quot;Row(hddtLU_L)&quot; por &quot;&quot; y dicho valor lo guardo en la variable &quot;strLU_L_mm&quot;" BuilderPattern="mm" sap:VirtualizedContainerService.HintSize="334,116" sap2010:WorkflowViewState.IdRef="Replace_10" Input="[Row(hddtLU_L).ToString]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;mm&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="mm" RegexOption="IgnoreCase, Compiled" Result="[strLU_L_mm]">
+                                    <ui:Replace.Replacement>
+                                      <InArgument x:TypeArguments="x:String">
+                                        <Literal x:TypeArguments="x:String" Value="" />
+                                      </InArgument>
+                                    </ui:Replace.Replacement>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </ui:Replace>
+                                  <Assign sap2010:Annotation.AnnotationText="En este modulo, remplazo el valor de  &quot;Row(hddtLU_L)&quot; por el valor en la variable  &quot;strLU_L_mm&quot;" sap:VirtualizedContainerService.HintSize="334,117" sap2010:WorkflowViewState.IdRef="Assign_14">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:Object">[Row(hddtLU_L)]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:Object">[strLU_L_mm]</InArgument>
+                                    </Assign.Value>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </Assign>
+                                  <ui:LogMessage sap2010:Annotation.AnnotationText="Este Log Message lo utilizo para ver el resultado del valor final" DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,129" sap2010:WorkflowViewState.IdRef="LogMessage_18" Level="Info" Message="[Row(hddtLU_L).ToString]">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </ui:LogMessage>
+                                </Sequence>
+                              </ui:IfElseIfBlock.Then>
+                            </ui:IfElseIfBlock>
+                          </sc:BindingList>
+                        </ui:IfElseIf.ConditionBlocks>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:IfElseIf>
+                    </Sequence>
+                  </ActivityAction>
+                </ui:ForEachRow.Body>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:ForEachRow>
+              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Este modulo se encarga decomprobar cada dato del DataTable en dtLU_W y realiza las siguietes acciones:&#xA;&#xA;- Si la fila que esta analizando esta en Inches(&quot;Pulgadas&quot;), este eliminara el prefijo &quot;in&quot; y lo convierte en Double, luego lo convierte a milimetros(operacion por 25.4) y lo vuelve a guardar en el dtLU_W&#xA;&#xA;- Si la fila que esta analizando esta en milimetros, elmina el prefijo &quot;mm&quot; y lo vuelve a guardar en el dtLU_W" DataTable="[dtLU_W]" DisplayName="For Each Row in dtLU_W" sap:VirtualizedContainerService.HintSize="527,2352" sap2010:WorkflowViewState.IdRef="ForEachRow_8">
+                <ui:ForEachRow.Body>
+                  <ActivityAction x:TypeArguments="sd:DataRow">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="sd:DataRow" Name="Row" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="493,2081" sap2010:WorkflowViewState.IdRef="Sequence_38">
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="x:Boolean" Name="bool_rowLU_W" />
+                      </Sequence.Variables>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:LogMessage sap2010:Annotation.AnnotationText="Este Log Message lo utilizo para ver el dato con el cual esta a punto de trabajar.&#xA;" DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="451,148" sap2010:WorkflowViewState.IdRef="LogMessage_30" Level="Info" Message="[&quot;Valor a evaluar = &quot; + Row(hddtLU_W).ToString]">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:LogMessage>
+                      <ui:IsMatch sap2010:Annotation.AnnotationText="Esta expresion la utilizo para validar si el dato tiene como prefjo &quot;In&quot; o &quot;mm&quot;:&#xA;&#xA;-Si el actual valor en &quot;Row(hddtLU_W)&quot; contiene el prefijo &quot;In&quot;, asigna a la variable bool_rowLU_W en &quot;True&quot;&#xA;&#xA;-Si el actual valor en &quot;Row(hddtLU_W)&quot; contiene el prefijo &quot;mm&quot;, asigna a la variable bool_rowLU_W en &quot;False&quot;" BuilderPattern=" in" DisplayName="Is Match" sap:VirtualizedContainerService.HintSize="451,221" sap2010:WorkflowViewState.IdRef="IsMatch_9" Input="[Row(hddtLU_W).ToString]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot; in&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern=" in" RegexOption="IgnoreCase, Compiled" Result="[bool_rowLU_W]">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:IsMatch>
+                      <ui:IfElseIf sap2010:Annotation.AnnotationText="En esta condicion entran los valores en &quot;Row(hddtLU_W)&quot; que contienen como prefijo &quot;in&quot;" DisplayName="Else If" sap:VirtualizedContainerService.HintSize="451,1540" sap2010:WorkflowViewState.IdRef="IfElseIf_8">
+                        <ui:IfElseIf.ConditionBlocks>
+                          <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
+                            <ui:IfElseIfBlock BlockType="If" Condition="[bool_rowLU_W = True]">
+                              <ui:IfElseIfBlock.Then>
+                                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="376,697" sap2010:WorkflowViewState.IdRef="Sequence_36">
+                                  <Sequence.Variables>
+                                    <Variable x:TypeArguments="x:String" Name="strRowLU_W" />
+                                    <Variable x:TypeArguments="x:Double" Name="doubleLU_W" />
+                                  </Sequence.Variables>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ui:Replace sap2010:Annotation.AnnotationText="En este modulo remplazo el prefijo &quot;in&quot; por &quot;&quot; y el resultado lo asigno en la variable &quot;strRowLU_W&quot;" BuilderPattern="in" sap:VirtualizedContainerService.HintSize="334,101" sap2010:WorkflowViewState.IdRef="Replace_17" Input="[Row(hddtLU_W).ToString]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;in&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="in" RegexOption="IgnoreCase, Compiled" Result="[strRowLU_W]">
+                                    <ui:Replace.Replacement>
+                                      <InArgument x:TypeArguments="x:String">
+                                        <Literal x:TypeArguments="x:String" Value="" />
+                                      </InArgument>
+                                    </ui:Replace.Replacement>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </ui:Replace>
+                                  <Assign sap2010:Annotation.AnnotationText="Aqui convierto el valor de la variable &quot;strRowLU_W&quot; a tipo Double y lo asigno a la variable &quot;doubleLU_W&quot;" sap:VirtualizedContainerService.HintSize="334,117" sap2010:WorkflowViewState.IdRef="Assign_30">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:Double">[doubleLU_W]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:Double">[Double.Parse(strRowLU_W)]</InArgument>
+                                    </Assign.Value>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </Assign>
+                                  <Assign sap2010:Annotation.AnnotationText="Aqui multiplico el valor de &quot;doubleLU_W&quot; por 25.4, con el objetivo de hacer la conversion a milimetros y el resultado lo remplazo en la fila en el DataTable" sap:VirtualizedContainerService.HintSize="334,136" sap2010:WorkflowViewState.IdRef="Assign_31">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:Object">[Row(hddtLU_W)]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:Object">[doubleLU_W * 25.4]</InArgument>
+                                    </Assign.Value>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </Assign>
+                                  <ui:LogMessage sap2010:Annotation.AnnotationText="Este Log Message lo utilizo para ver los valores que fueron recientemente convertidos." DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,131" sap2010:WorkflowViewState.IdRef="LogMessage_31" Level="Info" Message="[Row(hddtLU_W).ToString]">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </ui:LogMessage>
+                                </Sequence>
+                              </ui:IfElseIfBlock.Then>
+                            </ui:IfElseIfBlock>
+                            <ui:IfElseIfBlock BlockType="Else">
+                              <ui:IfElseIfBlock.Then>
+                                <Sequence sap2010:Annotation.AnnotationText="Esta condicion se ejecuta cuando el valor de &quot;bool_rowLU_W&quot; es igual a &quot;False&quot;" DisplayName="Body" sap:VirtualizedContainerService.HintSize="376,576" sap2010:WorkflowViewState.IdRef="Sequence_37">
+                                  <Sequence.Variables>
+                                    <Variable x:TypeArguments="x:String" Name="strLU_W_mm" />
+                                  </Sequence.Variables>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ui:Replace sap2010:Annotation.AnnotationText="Aqui remplazo el prefijo &quot;mm&quot; de el actual valor en &quot;Row(hddtLU_W)&quot; por &quot;&quot; y dicho valor lo guardo en la variable &quot;strLU_W_mm&quot;" BuilderPattern="mm" sap:VirtualizedContainerService.HintSize="334,116" sap2010:WorkflowViewState.IdRef="Replace_18" Input="[Row(hddtLU_W).ToString]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;mm&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="mm" RegexOption="IgnoreCase, Compiled" Result="[strLU_W_mm]">
+                                    <ui:Replace.Replacement>
+                                      <InArgument x:TypeArguments="x:String">
+                                        <Literal x:TypeArguments="x:String" Value="" />
+                                      </InArgument>
+                                    </ui:Replace.Replacement>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </ui:Replace>
+                                  <Assign sap2010:Annotation.AnnotationText="En este modulo, remplazo el valor de  &quot;Row(hddtLU_W)&quot; por el valor en la variable  &quot;strLU_W_mm&quot;" sap:VirtualizedContainerService.HintSize="334,117" sap2010:WorkflowViewState.IdRef="Assign_32">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:Object">[Row(hddtLU_W)]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:Object">[strLU_W_mm]</InArgument>
+                                    </Assign.Value>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </Assign>
+                                  <ui:LogMessage sap2010:Annotation.AnnotationText="Este Log Message lo utilizo para ver el resultado del valor final" DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,129" sap2010:WorkflowViewState.IdRef="LogMessage_32" Level="Info" Message="[Row(hddtLU_W).ToString]">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </ui:LogMessage>
+                                </Sequence>
+                              </ui:IfElseIfBlock.Then>
+                            </ui:IfElseIfBlock>
+                          </sc:BindingList>
+                        </ui:IfElseIf.ConditionBlocks>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:IfElseIf>
+                    </Sequence>
+                  </ActivityAction>
+                </ui:ForEachRow.Body>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:ForEachRow>
+              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Este modulo se encarga decomprobar cada dato del DataTable en dtLU_H y realiza las siguietes acciones:&#xA;&#xA;- Si la fila que esta analizando esta en Inches(&quot;Pulgadas&quot;), este eliminara el prefijo &quot;in&quot; y lo convierte en Double, luego lo convierte a milimetros(operacion por 25.4) y lo vuelve a guardar en el dtLU_H&#xA;&#xA;- Si la fila que esta analizando esta en milimetros, elmina el prefijo &quot;mm&quot; y lo vuelve a guardar en el dtLU_H" DataTable="[dtLU_H]" DisplayName="For Each Row in dtLU_H" sap:VirtualizedContainerService.HintSize="527,2352" sap2010:WorkflowViewState.IdRef="ForEachRow_9">
+                <ui:ForEachRow.Body>
+                  <ActivityAction x:TypeArguments="sd:DataRow">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="sd:DataRow" Name="Row" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="493,2081" sap2010:WorkflowViewState.IdRef="Sequence_41">
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="x:Boolean" Name="bool_rowLU_H" />
+                      </Sequence.Variables>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:LogMessage sap2010:Annotation.AnnotationText="Este Log Message lo utilizo para ver el dato con el cual esta a punto de trabajar.&#xA;" DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="451,148" sap2010:WorkflowViewState.IdRef="LogMessage_33" Level="Info" Message="[&quot;Valor a evaluar = &quot; + Row(hddtLU_H).ToString]">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:LogMessage>
+                      <ui:IsMatch sap2010:Annotation.AnnotationText="Esta expresion la utilizo para validar si el dato tiene como prefjo &quot;In&quot; o &quot;mm&quot;:&#xA;&#xA;-Si el actual valor en &quot;Row(hddtLU_H)&quot; contiene el prefijo &quot;In&quot;, asigna a la variable bool_rowLU_H en &quot;True&quot;&#xA;&#xA;-Si el actual valor en &quot;Row(hddtLU_H)&quot; contiene el prefijo &quot;mm&quot;, asigna a la variable bool_rowLU_H en &quot;False&quot;" BuilderPattern=" in" DisplayName="Is Match" sap:VirtualizedContainerService.HintSize="451,221" sap2010:WorkflowViewState.IdRef="IsMatch_10" Input="[Row(hddtLU_H).ToString]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot; in&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern=" in" RegexOption="IgnoreCase, Compiled" Result="[bool_rowLU_H]">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:IsMatch>
+                      <ui:IfElseIf sap2010:Annotation.AnnotationText="En esta condicion entran los valores en &quot;Row(hddtLU_H)&quot; que contienen como prefijo &quot;in&quot;" DisplayName="Else If" sap:VirtualizedContainerService.HintSize="451,1540" sap2010:WorkflowViewState.IdRef="IfElseIf_9">
+                        <ui:IfElseIf.ConditionBlocks>
+                          <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
+                            <ui:IfElseIfBlock BlockType="If" Condition="[bool_rowLU_H = True]">
+                              <ui:IfElseIfBlock.Then>
+                                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="376,697" sap2010:WorkflowViewState.IdRef="Sequence_39">
+                                  <Sequence.Variables>
+                                    <Variable x:TypeArguments="x:String" Name="strRowLU_H" />
+                                    <Variable x:TypeArguments="x:Double" Name="doubleLU_H" />
+                                  </Sequence.Variables>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ui:Replace sap2010:Annotation.AnnotationText="En este modulo remplazo el prefijo &quot;in&quot; por &quot;&quot; y el resultado lo asigno en la variable &quot;strRowLU_H&quot;" BuilderPattern="in" sap:VirtualizedContainerService.HintSize="334,101" sap2010:WorkflowViewState.IdRef="Replace_19" Input="[Row(hddtLU_H).ToString]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;in&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="in" RegexOption="IgnoreCase, Compiled" Result="[strRowLU_H]">
+                                    <ui:Replace.Replacement>
+                                      <InArgument x:TypeArguments="x:String">
+                                        <Literal x:TypeArguments="x:String" Value="" />
+                                      </InArgument>
+                                    </ui:Replace.Replacement>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </ui:Replace>
+                                  <Assign sap2010:Annotation.AnnotationText="Aqui convierto el valor de la variable &quot;strRowLU_H&quot; a tipo Double y lo asigno a la variable &quot;doubleLU_H&quot;" sap:VirtualizedContainerService.HintSize="334,117" sap2010:WorkflowViewState.IdRef="Assign_33">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:Double">[doubleLU_H]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:Double">[Double.Parse(strRowLU_H)]</InArgument>
+                                    </Assign.Value>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </Assign>
+                                  <Assign sap2010:Annotation.AnnotationText="Aqui multiplico el valor de &quot;doubleLU_H&quot; por 25.4, con el objetivo de hacer la conversion a milimetros y el resultado lo remplazo en la fila en el DataTable" sap:VirtualizedContainerService.HintSize="334,136" sap2010:WorkflowViewState.IdRef="Assign_34">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:Object">[Row(hddtLU_H)]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:Object">[doubleLU_H * 25.4]</InArgument>
+                                    </Assign.Value>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </Assign>
+                                  <ui:LogMessage sap2010:Annotation.AnnotationText="Este Log Message lo utilizo para ver los valores que fueron recientemente convertidos." DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,131" sap2010:WorkflowViewState.IdRef="LogMessage_34" Level="Info" Message="[Row(hddtLU_H).ToString]">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </ui:LogMessage>
+                                </Sequence>
+                              </ui:IfElseIfBlock.Then>
+                            </ui:IfElseIfBlock>
+                            <ui:IfElseIfBlock BlockType="Else">
+                              <ui:IfElseIfBlock.Then>
+                                <Sequence sap2010:Annotation.AnnotationText="Esta condicion se ejecuta cuando el valor de &quot;bool_rowLU_H&quot; es igual a &quot;False&quot;" DisplayName="Body" sap:VirtualizedContainerService.HintSize="376,576" sap2010:WorkflowViewState.IdRef="Sequence_40">
+                                  <Sequence.Variables>
+                                    <Variable x:TypeArguments="x:String" Name="strLU_H_mm" />
+                                  </Sequence.Variables>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ui:Replace sap2010:Annotation.AnnotationText="Aqui remplazo el prefijo &quot;mm&quot; de el actual valor en &quot;Row(hddtLU_H)&quot; por &quot;&quot; y dicho valor lo guardo en la variable &quot;strLU_H_mm&quot;" BuilderPattern="mm" sap:VirtualizedContainerService.HintSize="334,116" sap2010:WorkflowViewState.IdRef="Replace_20" Input="[Row(hddtLU_H).ToString]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;mm&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="mm" RegexOption="IgnoreCase, Compiled" Result="[strLU_H_mm]">
+                                    <ui:Replace.Replacement>
+                                      <InArgument x:TypeArguments="x:String">
+                                        <Literal x:TypeArguments="x:String" Value="" />
+                                      </InArgument>
+                                    </ui:Replace.Replacement>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </ui:Replace>
+                                  <Assign sap2010:Annotation.AnnotationText="En este modulo, remplazo el valor de  &quot;Row(hddtLU_H)&quot; por el valor en la variable  &quot;strLU_H_mm&quot;" sap:VirtualizedContainerService.HintSize="334,117" sap2010:WorkflowViewState.IdRef="Assign_35">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:Object">[Row(hddtLU_H)]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:Object">[strLU_H_mm]</InArgument>
+                                    </Assign.Value>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </Assign>
+                                  <ui:LogMessage sap2010:Annotation.AnnotationText="Este Log Message lo utilizo para ver el resultado del valor final" DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,129" sap2010:WorkflowViewState.IdRef="LogMessage_35" Level="Info" Message="[Row(hddtLU_H).ToString]">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </ui:LogMessage>
+                                </Sequence>
+                              </ui:IfElseIfBlock.Then>
+                            </ui:IfElseIfBlock>
+                          </sc:BindingList>
+                        </ui:IfElseIf.ConditionBlocks>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:IfElseIf>
+                    </Sequence>
+                  </ActivityAction>
+                </ui:ForEachRow.Body>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:ForEachRow>
+            </Parallel>
+            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" sap2010:Annotation.AnnotationText="En este modulo se insertan los datos de las tablas anterirormente procesadas en el documento llamaddo &quot;PSDS.xlms&quot; Este modulo contiene las siguientes propiedades:&#xD;&#xA;- Si el archvo no existe, crea uno nuevo&#xD;&#xA;- Cada vez que el archivo recibe un cambio, este es guardado." DisplayName="Incersion de datos en PSDS.xlsm" sap:VirtualizedContainerService.HintSize="520,3019" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_4" ResizeWindow="None" WorkbookPath="PSDS\PSDS.xlsm">
+              <ueab:ExcelApplicationCard.Body>
+                <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="476,2681" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ueab:WriteRangeX sap2010:Annotation.AnnotationText="En este modulo se realiza el procedimiento de insercion de la tabla dtNoPartes empezando en el campo &quot;B3&quot; del documento &quot;PSDS.xlms&quot;." Destination="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;B3&quot;)]" DisplayName="Insercion de la tabla dtNoPartes" sap:VirtualizedContainerService.HintSize="434,199" sap2010:WorkflowViewState.IdRef="WriteRangeX_24" IgnoreEmptySource="False" Source="[dtNoPartes]">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ueab:WriteRangeX>
+                    <ueab:WriteRangeX sap2010:Annotation.AnnotationText="En este modulo se realiza el procedimiento de insercion de la tabla dtQtyPPack empezando en el campo &quot;C3&quot; del documento &quot;PSDS.xlms&quot;." Destination="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;C3&quot;)]" DisplayName="Insercion de la tabla dtQtyPPack" sap:VirtualizedContainerService.HintSize="434,199" sap2010:WorkflowViewState.IdRef="WriteRangeX_25" IgnoreEmptySource="False" Source="[dtQtyPPack]">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ueab:WriteRangeX>
+                    <ueab:WriteRangeX sap2010:Annotation.AnnotationText="En este modulo se realiza el procedimiento de insercion de la tabla dtQtyLU empezando en el campo &quot;D3&quot; del documento &quot;PSDS.xlms&quot;." Destination="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;D3&quot;)]" DisplayName="Insercion de la tabla dtQtyLu" sap:VirtualizedContainerService.HintSize="434,199" sap2010:WorkflowViewState.IdRef="WriteRangeX_26" IgnoreEmptySource="False" Source="[dtQtyLU]">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ueab:WriteRangeX>
+                    <ueab:WriteRangeX sap2010:Annotation.AnnotationText="En este modulo se realiza el procedimiento de insercion de la tabla dtNoPartes empezando en el campo &quot;G3&quot; del documento &quot;PSDS.xlms&quot;." Destination="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;G3&quot;)]" DisplayName="Insercion de la tabla dtNoPartes" sap:VirtualizedContainerService.HintSize="434,199" sap2010:WorkflowViewState.IdRef="WriteRangeX_27" IgnoreEmptySource="False" Source="[dtNoPartes]">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ueab:WriteRangeX>
+                    <ueab:WriteRangeX sap2010:Annotation.AnnotationText="En este modulo se realiza el procedimiento de insercion de la tabla dtPPack_L empezando en el campo &quot;H3&quot; del documento &quot;PSDS.xlms&quot;." Destination="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;H3&quot;)]" DisplayName="Insercion de la tabla dtPPack_L" sap:VirtualizedContainerService.HintSize="434,199" sap2010:WorkflowViewState.IdRef="WriteRangeX_28" IgnoreEmptySource="False" Source="[dtPPack_L]">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ueab:WriteRangeX>
+                    <ueab:WriteRangeX sap2010:Annotation.AnnotationText="En este modulo se realiza el procedimiento de insercion de la tabla dtPPack_W empezando en el campo &quot;I3&quot; del documento &quot;PSDS.xlms&quot;." Destination="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;I3&quot;)]" DisplayName="Insercion de la tabla dtPPack_W" sap:VirtualizedContainerService.HintSize="434,199" sap2010:WorkflowViewState.IdRef="WriteRangeX_29" IgnoreEmptySource="False" Source="[dtPPack_W]">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ueab:WriteRangeX>
+                    <ueab:WriteRangeX sap2010:Annotation.AnnotationText="En este modulo se realiza el procedimiento de insercion de la tabla dtPPack_H empezando en el campo &quot;J3&quot; del documento &quot;PSDS.xlms&quot;." Destination="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;J3&quot;)]" DisplayName="Insercion de la tabla dtPPack_H" sap:VirtualizedContainerService.HintSize="434,199" sap2010:WorkflowViewState.IdRef="WriteRangeX_30" IgnoreEmptySource="False" Source="[dtPPack_H]">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ueab:WriteRangeX>
+                    <ueab:WriteRangeX sap2010:Annotation.AnnotationText="En este modulo se realiza el procedimiento de insercion de la tabla dtNoPartes empezando en el campo &quot;L3&quot; del documento &quot;PSDS.xlms&quot;." Destination="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;L3&quot;)]" DisplayName="Insercion de la tabla dtNoPartes" sap:VirtualizedContainerService.HintSize="434,199" sap2010:WorkflowViewState.IdRef="WriteRangeX_31" IgnoreEmptySource="False" Source="[dtNoPartes]">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ueab:WriteRangeX>
+                    <ueab:WriteRangeX sap2010:Annotation.AnnotationText="En este modulo se realiza el procedimiento de insercion de la tabla dtLU_L empezando en el campo &quot;M3&quot; del documento &quot;PSDS.xlms&quot;." Destination="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;M3&quot;)]" DisplayName="Insercion de la tabla dtLU_L " sap:VirtualizedContainerService.HintSize="434,199" sap2010:WorkflowViewState.IdRef="WriteRangeX_32" IgnoreEmptySource="False" Source="[dtLU_L]">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ueab:WriteRangeX>
+                    <ueab:WriteRangeX sap2010:Annotation.AnnotationText="En este modulo se realiza el procedimiento de insercion de la tabla dtLU_W empezando en el campo &quot;N3&quot; del documento &quot;PSDS.xlms&quot;." Destination="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;N3&quot;)]" DisplayName="Insercion de la tabla dtLU_W" sap:VirtualizedContainerService.HintSize="434,199" sap2010:WorkflowViewState.IdRef="WriteRangeX_33" IgnoreEmptySource="False" Source="[dtLU_W]">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ueab:WriteRangeX>
+                    <ueab:WriteRangeX sap2010:Annotation.AnnotationText="En este modulo se realiza el procedimiento de insercion de la tabla dtLU_H empezando en el campo &quot;O3&quot; del documento &quot;PSDS.xlms&quot;." Destination="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;O3&quot;)]" DisplayName="Insercion de la tabla dtLU_H" sap:VirtualizedContainerService.HintSize="434,199" sap2010:WorkflowViewState.IdRef="WriteRangeX_34" IgnoreEmptySource="False" Source="[dtLU_H]">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ueab:WriteRangeX>
+                  </Sequence>
+                </ActivityAction>
+              </ueab:ExcelApplicationCard.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ueab:ExcelApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </ueab:ExcelProcessScopeX.Body>
+    </ueab:ExcelProcessScopeX>
+  </Sequence>
+</Activity>
